@@ -6,7 +6,7 @@
 /*   By: sunakim <sunakim@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 18:16:31 by sunakim           #+#    #+#             */
-/*   Updated: 2018/11/30 15:29:08 by sunakim          ###   ########.fr       */
+/*   Updated: 2018/12/07 16:06:18 by sunakim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,5 +92,8 @@ void				ft_foreach(int *tab, int length, void (*f)(int));
 int					ft_any(char **tab, int (*f)(char*));
 char				*ft_strndup(const char *s1, size_t n);
 int					get_next_line(const int fd, char **line);
+int					ft_max(int a, int b);
+int					ft_min(int a, int b);
+void				*ft_realloc(void *ptr, size_t size);
 
 #endif

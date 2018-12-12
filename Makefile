@@ -6,7 +6,7 @@
 #    By: sunakim <sunakim@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/11 15:37:53 by sunakim           #+#    #+#              #
-#    Updated: 2018/11/30 15:31:38 by sunakim          ###   ########.fr        #
+#    Updated: 2018/12/07 16:06:29 by sunakim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,25 +28,10 @@ SRC =	./ft_memset.c ./ft_bzero.c ./ft_memcpy.c ./ft_memccpy.c				\
 		./ft_lstdelone.c ./ft_lstdel.c ./ft_lstadd.c ./ft_lstiter.c			\
 		./ft_lstmap.c ./ft_memmove.c ./ft_strcpy.c ./ft_swap.c				\
 		./ft_sort_params.c ./ft_print_params.c ./ft_strlowcase.c			\
-		./ft_foreach.c ./ft_any.c ./ft_strndup.c ./get_next_line.c
+		./ft_foreach.c ./ft_any.c ./ft_strndup.c ./get_next_line.c			\
+		./ft_min.c ./ft_max.c ./ft_realloc.c
 
-OBJ = 	./ft_memset.o ./ft_bzero.o ./ft_memcpy.o ./ft_memccpy.o				\
-		./ft_memchr.o ./ft_memcmp.o ./ft_strlen.o ./ft_strdup.o				\
-		./ft_strncpy.o ./ft_strcat.o ./ft_strncat.o ./ft_strlcat.o			\
-		./ft_strchr.o ./ft_strrchr.o ./ft_strstr.o ./ft_strnstr.o			\
-		./ft_strcmp.o ./ft_strncmp.o ./ft_atoi.o ./ft_isalpha.o 			\
-		./ft_isdigit.o ./ft_isalnum.o ./ft_isascii.o ./ft_isprint.o			\
-		./ft_toupper.o ./ft_tolower.o ./ft_memalloc.o ./ft_memdel.o			\
-		./ft_strnew.o ./ft_strdel.o ./ft_strclr.o ./ft_striter.o			\
-		./ft_striteri.o ./ft_strmap.o ./ft_strmapi.o ./ft_strequ.o			\
-		./ft_strnequ.o ./ft_strsub.o ./ft_strsub.o ./ft_strjoin.o			\
-		./ft_strtrim.o ./ft_strsplit.o ./ft_itoa.o ./ft_putchar.o			\
-		./ft_putstr.o ./ft_putendl.o ./ft_putnbr.o ./ft_putchar_fd.o		\
-		./ft_putstr_fd.o ./ft_putendl_fd.o ./ft_putnbr_fd.o ./ft_lstnew.o	\
-		./ft_lstdelone.o ./ft_lstdel.o ./ft_lstadd.o ./ft_lstiter.o			\
-		./ft_lstmap.o ./ft_memmove.o ./ft_strcpy.o ./ft_swap.o				\
-		./ft_sort_params.o ./ft_print_params.o ./ft_strlowcase.o			\
-		./ft_foreach.o ./ft_any.o ./ft_strndup.o ./get_next_line.o
+OBJ = 	$(SRC:.c=.o)
 
 HEADER = -I ./
 
